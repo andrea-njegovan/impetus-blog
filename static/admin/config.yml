@@ -1,5 +1,7 @@
 backend:
-  name: test-repo
+  name: github
+  repo: andrea-njegovan/impetus-blog
+
 
 media_folder: static/assets
 public_folder: assets
