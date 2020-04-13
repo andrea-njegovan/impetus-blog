@@ -6,7 +6,7 @@ module.exports = {
     description: `A personal blog offering motivational business, lifestyle and fitness stories.`,
     siteUrl: `https://impetus-blog.netlify.com/`,
     social: {
-      linkedin: `http://linkedin.com/in/andrea-njegovan-5ab876`,
+      linkedin: `andrea-njegovan-5ab87668`,
     },
   },
   plugins: [
