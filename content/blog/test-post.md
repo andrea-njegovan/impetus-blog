@@ -6,7 +6,7 @@ description: Testing the post from Netlify
 ---
 
 
-![](assets/mar20_23_1022720964-2.jpg)
+![](/assets/mar20_23_1022720964-2.jpg)
 
 
 
