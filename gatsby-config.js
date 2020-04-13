@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    // edit below
     title: `Impetus Blog`,
     author: `Andrea Njegovan`,
     description: `A personal blog offering motivational business, lifestyle and fitness stories.`,

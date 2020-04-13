@@ -1,6 +1,7 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
+image: mar20_23_1022720964-2.jpg
 ---
 
 This is my first post on my new fake blog! How exciting!
