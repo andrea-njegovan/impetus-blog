@@ -17,7 +17,6 @@ export const StyledSection = styled.div`
 
 export const StyledLink = styled(Link)`
     position: relative;
-    display: block;
     width: 100%;
     height: 100%;
     top: 0;

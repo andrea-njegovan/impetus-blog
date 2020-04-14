@@ -59,6 +59,13 @@ export const pageQuery = graphql`
         title
       }
     }
+    file(relativePath: {eq:"/pubic/assets/mar20_23_1022720964-2.jpg"}) {
+      childImageSharp {
+          fixed(width: 125, height: 125) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+    }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {

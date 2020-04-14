@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from '../components/common';
 
 import {
     StyledSection,
@@ -18,10 +19,10 @@ const PostListTemplate = ({ posts, children }) => {
 		<StyledSection>
 			{ children }
 			{posts.map(post => (
-				<StyledLink	key={post.node.id} to={`/blog/${post.node.fields.slug}`}>
+				<StyledLink	key={ post.node.id } to={`/blog/${post.node.fields.slug}`}>
                 <BookItemWrapper>
                 <BookItemImageWrapper>
-                    <StyledImg src={`/assets/${post.node.frontmatter.image}`} />
+                    <Image src={ post.node.frontmatter.imageUrl } />
                 </BookItemImageWrapper>
                     <BookItemContentWrapper>
                         <BookItemTitle>
