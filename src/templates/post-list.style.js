@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from "gatsby";
-/*import Img from 'gatsby-image';*/
 import color from '../utils/colors';
 import { respondTo } from '../utils/respondTo';
 
@@ -62,22 +61,6 @@ export const BookItemImageWrapper = styled.div`
     ${respondTo.sm`
         box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px -10px, rgba(0, 0, 0, 0.33) 0px 18px 36px -18px;
     `}
-`;
-
-export const StyledImg = styled.img`
-    -webkit-transition: transform 1.01s ease-in-out;
-    -moz-transition:transform 1.01s ease-in-out;
-    -ms-transition:transform 1.01s ease-in-out;
-    
-    :hover {
-        -moz-transform: scale(1.01);
-        -webkit-transform: scale(1.01);
-        -o-transform: scale(1.01);
-        -ms-transform: scale(1.01);
-        -webkit-transform: scale(1.01);
-        transform: scale(1.01);
-        transform-origin: 50% 50%;
-    }
 `;
 
 export const BookItemContentWrapper = styled.div`

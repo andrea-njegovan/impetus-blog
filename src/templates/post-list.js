@@ -6,7 +6,6 @@ import {
     StyledLink,
     BookItemWrapper,
     BookItemImageWrapper,
-    StyledImg,
     BookItemContentWrapper,
     BookItemTitle,
     BookItemText,

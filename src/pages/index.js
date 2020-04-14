@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/layout"
 import styled from 'styled-components';
 import { respondTo } from '../utils/respondTo';
 
@@ -16,11 +17,13 @@ const WelcomeWrapper = styled.div`
 const IndexPage = (props) => {
 
 	return (
-		<PostListTemplate posts={ props.data.allMdx.edges }>
-      <WelcomeWrapper>
-        <Welcome />
-      </WelcomeWrapper>
-    </PostListTemplate>
+    <Layout>
+      <PostListTemplate posts={ props.data.allMdx.edges }>
+        <WelcomeWrapper>
+          <Welcome />
+        </WelcomeWrapper>
+      </PostListTemplate>
+    </Layout>
 	)
 }
 
