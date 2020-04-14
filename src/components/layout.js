@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header";
 import SideMenu from "./SideMenu";
 import Backdrop from './Backdrop';
+import "./layout.css";
 
 const Layout = ({ children }) => {
 	const [ sideMenuOpen, setSideMenuOpen ] = useState(false);

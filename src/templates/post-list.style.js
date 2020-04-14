@@ -75,7 +75,7 @@ export const BookItemTitle = styled.h2`
     word-break: keep-all;
     line-height: 1.333;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin: 1rem 0;
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
     text-overflow: ellipsis;
@@ -104,7 +104,7 @@ export const BookItemText = styled.p`
     display: box;
     max-width: 100%;
     margin-bottom: 20px;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
 
     ${respondTo.sm`
         max-width: 515px;
