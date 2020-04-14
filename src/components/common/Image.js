@@ -25,7 +25,7 @@ export const Image = ({ src, ...props }) => {
     
   const data = useStaticQuery(graphql`
     query {
-        allFile(filter: {dir: {regex: "/\/public\/.*/"}}) {
+        allFile(filter: {dir: {regex: "/\/static\/.*/"}}) {
             nodes {
               relativePath
               childImageSharp {
