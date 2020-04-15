@@ -7,7 +7,7 @@ description: Mi proin sed libero enim sed faucibus turpis in. Sagittis purus sit
   netus et malesuada fames. Dignissim cras tincidunt lobortis feugiat vivamus.
   Risus feugiat in ante metus dictum at tempor commodo. Curabitur vitae nunc sed
   velit dignissim sodales ut. Augue ut lectus arcu bibendum at.
-image: mar20_23_1022720964-2.jpg
+image: /assets/mar20_23_1022720964-2.jpg
 imageUrl: mar20_23_1022720964-2.jpg
 ---
 ![](/assets/mar20_23_1022720964-2.jpg)
