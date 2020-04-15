@@ -13,25 +13,25 @@ import {
 } from './post-list.style';
 
 const PostListTemplate = ({ posts, children }) => {
-    console.log(posts);
 	return (
 		<StyledSection>
 			{ children }
-			{posts.map(post => (
-				<StyledLink	key={ post.node.id } to={`/blog/${post.node.fields.slug}`}>
+			{posts.map(({ node }) => (
+				<StyledLink	key={ node.id } to={`/blog/${ node.fields.slug }`}>
                 <BookItemWrapper>
                 <BookItemImageWrapper>
-                    <Image src={ post.node.frontmatter.image } />
+                    <Image src={ node.frontmatter.image } />
                 </BookItemImageWrapper>
                     <BookItemContentWrapper>
                         <BookItemTitle>
-                            { post.node.frontmatter.title }
+                            { node.frontmatter.title || node.fields.slug }
                         </BookItemTitle>
-                        <BookItemText>
-                            { post.node.frontmatter.description }
-                        </BookItemText>
+                        <BookItemText dangerouslySetInnerHTML={{
+                                __html: node.frontmatter.description || node.excerpt,
+                            }}
+                        />
                         <BookItemInfo>
-                            { post.node.frontmatter.date }
+                            { node.frontmatter.date }
                         </BookItemInfo>
                     </BookItemContentWrapper>
                 </BookItemWrapper>

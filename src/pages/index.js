@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout"
-import styled from 'styled-components';
-import { respondTo } from '../utils/respondTo';
+import SEO from "../components/seo";
+/*import styled from 'styled-components';
+import { respondTo } from '../utils/respondTo';*/
 
 import PostListTemplate from '../templates/post-list';
 /*import Welcome from '../components/Welcome';
@@ -15,13 +15,13 @@ const WelcomeWrapper = styled.div`
 `;*/
 
 const IndexPage = (props) => {
-  console.log(props);
 
 	return (
-    <Layout>
+    <>
+      <SEO title="All posts" />
       <PostListTemplate posts={ props.data.allMdx.edges }>
       </PostListTemplate>
-    </Layout>
+    </>
 	)
 }
 
