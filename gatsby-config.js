@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Impetus Blog`,
+    title: `Impetus B.`,
     author: `Andrea Njegovan`,
     description: `A personal blog offering motivational business, lifestyle and fitness stories.`,
     siteUrl: `https://impetus-blog.netlify.com/`,

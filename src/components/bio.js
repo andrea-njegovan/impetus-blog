@@ -34,11 +34,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Written by <strong>{author}</strong>.
               {` `}
               <a href={`http://linkedin.com/in//${social.linkedin}`}>
-                You should follow her on Linkedin
+                You can follow her on Linkedin.
               </a>
             </p>
           </Container>

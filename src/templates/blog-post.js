@@ -1,10 +1,20 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Bio from "../components/bio"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+
+import {
+  ArticleWrapper,
+  Header,
+  Title,
+  Details,
+  Author,
+  Date,
+  ArticleContent,
+  PostsNav
+} from './blog-post.style';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -18,34 +28,23 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <MDXRenderer>{post.body}</MDXRenderer>
-        <hr
+        <ArticleWrapper>
+            <Header>
+                <Title>{ post.frontmatter.title }</Title>
+                <Details>
+                    <Date>Published on { post.frontmatter.date }</Date>
+                </Details>
+            </Header>
+            <ArticleContent>{ post.body }</ArticleContent>
+            <hr
           style={{
             marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
+            }}
+          />
+          <Bio />
+        </ArticleWrapper>
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+        <PostsNav>
           <li>
             {previous && (
               <Link to={`blog${previous.fields.slug}`} rel="prev">
@@ -60,7 +59,7 @@ class BlogPostTemplate extends React.Component {
               </Link>
             )}
           </li>
-        </ul>
+        </PostsNav>
       </>
     )
   }
