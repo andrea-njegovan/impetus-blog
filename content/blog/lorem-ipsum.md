@@ -6,9 +6,9 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
   commodo consequat.
-image: /assets/lorem.jpg
+image: /assets/lorem2.jpeg
 ---
-![](/assets/lorem.jpg)
+![](/assets/lorem2.jpeg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus quam pellentesque nec nam aliquam sem et. Nunc consequat interdum varius sit amet mattis vulputate. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Nulla at volutpat diam ut venenatis tellus in metus. Amet porttitor eget dolor morbi non. Egestas integer eget aliquet nibh. Viverra nam libero justo laoreet sit amet cursus. Arcu dictum varius duis at consectetur. Consectetur libero id faucibus nisl. Suspendisse potenti nullam ac tortor vitae purus faucibus. Ipsum suspendisse ultrices gravida dictum fusce ut. Morbi tristique senectus et netus et. Arcu risus quis varius quam quisque. Odio facilisis mauris sit amet massa vitae tortor. Ac turpis egestas maecenas pharetra convallis posuere morbi. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ullamcorper velit sed ullamcorper morbi. Mi in nulla posuere sollicitudin aliquam ultrices sagittis.
 
