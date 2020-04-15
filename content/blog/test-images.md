@@ -7,7 +7,7 @@ description: Emotional intelligence is critical in building and maintaining
   their career and wherever they sit in an organizational structure. While some
   people will be naturally more adept at certain aspects, EI can be learned,
   developed, and enhanced.
-image: mar20_23_1022720964-2.jpg
+image: /assets/img.jpg
 imageUrl: img.jpg
 ---
 ![](/assets/img.jpg)
