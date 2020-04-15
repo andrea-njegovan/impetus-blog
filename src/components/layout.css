@@ -46,6 +46,7 @@ html {
     color: #7A7A7A;
     text-decoration: none;
     cursor: pointer;
+    box-shadow: none;
   }
   a:active,
   a:hover {

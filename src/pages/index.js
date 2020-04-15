@@ -4,15 +4,15 @@ import Layout from "../components/layout"
 import styled from 'styled-components';
 import { respondTo } from '../utils/respondTo';
 
-import Welcome from '../components/Welcome';
 import PostListTemplate from '../templates/post-list';
+/*import Welcome from '../components/Welcome';
 
 const WelcomeWrapper = styled.div`
     display: none;
     ${respondTo.md`
         display: inline-block;
     `}
-`;
+`;*/
 
 const IndexPage = (props) => {
   console.log(props);
@@ -20,9 +20,6 @@ const IndexPage = (props) => {
 	return (
     <Layout>
       <PostListTemplate posts={ props.data.allMdx.edges }>
-        <WelcomeWrapper>
-          <Welcome />
-        </WelcomeWrapper>
       </PostListTemplate>
     </Layout>
 	)

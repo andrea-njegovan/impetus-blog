@@ -10,7 +10,7 @@ export const StyledSection = styled.div`
     max-width: 100%;
     ${respondTo.md`
         padding: 1rem;
-        max-width: 1220px;
+        max-width: 1150px;
     `}
 `;
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rhythm } from "../../utils/typography"
 import color from '../../utils/colors';
 import { respondTo } from '../../utils/respondTo';
 
@@ -33,7 +34,7 @@ export const MenuNav = styled.div`
 `;
 
 export const MenuItem = styled.li`
-    margin: 0.5rem 0;
+    margin: ${rhythm(1 / 2)};
 
     a {
         font-size: 1.2rem;

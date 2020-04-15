@@ -31,6 +31,7 @@ export const LogoWrapper = styled.div`
 `;
 
 export const Logo = styled.div`
+	font-family: Pacifico;
 	margin-left: 1rem;
 	${respondTo.sm`
 		margin-left: 0;
@@ -38,7 +39,7 @@ export const Logo = styled.div`
 
 	>a {
 		color: ${color.primary};
-		font-size: 2rem;
+		font-size: 2.3rem;
 	}
 `;
 

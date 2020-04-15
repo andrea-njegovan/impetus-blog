@@ -92,5 +92,15 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Indie Flower`,
+          `Pacifico`
+        ],
+        display: 'swap'
+      }
+    },
   ],
 }
