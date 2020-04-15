@@ -21,7 +21,7 @@ const PostListTemplate = ({ posts, children }) => {
 				<StyledLink	key={ post.node.id } to={`/blog/${post.node.fields.slug}`}>
                 <BookItemWrapper>
                 <BookItemImageWrapper>
-                    <Image src={ post.node.frontmatter.imageUrl } />
+                    <Image src={ post.node.frontmatter.image } />
                 </BookItemImageWrapper>
                     <BookItemContentWrapper>
                         <BookItemTitle>

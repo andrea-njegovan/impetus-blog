@@ -15,6 +15,7 @@ const WelcomeWrapper = styled.div`
 `;
 
 const IndexPage = (props) => {
+  console.log(props);
 
 	return (
     <Layout>
@@ -47,7 +48,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            imageUrl
+            image
           }
         }
       }

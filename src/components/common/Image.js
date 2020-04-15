@@ -39,7 +39,7 @@ export const Image = ({ src, ...props }) => {
   `)
 
   const match = useMemo(() => (
-    data.allFile.nodes.find(({ relativePath }) => src === relativePath)
+    data.allFile.nodes.find(({ relativePath }) => src === '/assets/' + relativePath)
   ), [ data, src ])
 
   const fluid = safeGet(match, 'childImageSharp.fluid')
