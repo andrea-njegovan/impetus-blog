@@ -8,7 +8,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   commodo consequat.
 image: /assets/lorem.jpg
 ---
-
+![](/assets/lorem.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus quam pellentesque nec nam aliquam sem et. Nunc consequat interdum varius sit amet mattis vulputate. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Nulla at volutpat diam ut venenatis tellus in metus. Amet porttitor eget dolor morbi non. Egestas integer eget aliquet nibh. Viverra nam libero justo laoreet sit amet cursus. Arcu dictum varius duis at consectetur. Consectetur libero id faucibus nisl. Suspendisse potenti nullam ac tortor vitae purus faucibus. Ipsum suspendisse ultrices gravida dictum fusce ut. Morbi tristique senectus et netus et. Arcu risus quis varius quam quisque. Odio facilisis mauris sit amet massa vitae tortor. Ac turpis egestas maecenas pharetra convallis posuere morbi. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ullamcorper velit sed ullamcorper morbi. Mi in nulla posuere sollicitudin aliquam ultrices sagittis.
 
@@ -32,10 +32,6 @@ Eget nunc lobortis mattis aliquam faucibus purus. Tristique risus nec feugiat in
 
 Vestibulum morbi blandit cursus risus at ultrices mi tempus. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Vestibulum sed arcu non odio euismod. Egestas quis ipsum suspendisse ultrices gravida dictum. Id leo in vitae turpis massa sed elementum tempus. Placerat duis ultricies lacus sed turpis tincidunt. A diam maecenas sed enim. Rutrum quisque non tellus orci ac auctor augue. Orci eu lobortis elementum nibh. Facilisis volutpat est velit egestas dui. Ut lectus arcu bibendum at varius vel. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Vel facilisis volutpat est velit egestas. Est lorem ipsum dolor sit amet consectetur adipiscing. Pulvinar pellentesque habitant morbi tristique senectus et netus. Elementum nibh tellus molestie nunc non.
 
-
-
 **Lorem ipsum dolor sit amet consectetur adipiscing elit ut**
-
-
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Tristique senectus et netus et malesuada fames. Fusce id velit ut tortor pretium. Eget nulla facilisi etiam dignissim diam quis enim. Dignissim diam quis enim lobortis scelerisque fermentum. Adipiscing diam donec adipiscing tristique risus. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis. Quis lectus nulla at volutpat diam ut venenatis tellus. Vel risus commodo viverra maecenas accumsan lacus vel facilisis.
