@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: andrea-njegovan/impetus-blog
+  name: git-gateway
 
 
 media_folder: static/assets
