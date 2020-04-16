@@ -7,12 +7,11 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { Avatar } from './common';
 import styled from "styled-components"
 
-import { rhythm } from "../utils/typography"
+function Bio({author}) {
 
-function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
@@ -20,24 +19,12 @@ function Bio() {
         const { author, social } = data.site.siteMetadata
         return (
           <Container>
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
+            <Avatar src="/assets/profile.jpg" />
             <p>
-              Written by <strong>{author}</strong>.
+              Written by <strong>{author}</strong>
               {` `}
               <a href={`http://linkedin.com/in//${social.linkedin}`}>
-                You can follow her on Linkedin.
+                You should follow her on Linkedin
               </a>
             </p>
           </Container>

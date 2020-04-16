@@ -17,3 +17,11 @@ collections:
       - { name: description, label: Description }
       - { name: image, label: image, widget: image }
       - { name: body, label: Body, widget: markdown }
+  - name: authors
+    label: Authors
+    folder: content/authors
+    create: true
+    fields:
+      - { name: name, label: Name }
+      - { name: bio, label: Bio }
+      - { name: image, label: image, widget: image }

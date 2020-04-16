@@ -20,23 +20,23 @@ const StyledImg = styled(Img)`
     }
 `;
 
-export const Image = ({ src, ...props }) => {
-    console.log(src);
-    
+export const Image = ({ src, avatar, ...props }) => {
+  console.log(props);
+
   const data = useStaticQuery(graphql`
-    query {
-        allFile(filter: {dir: {regex: "/\/static\/.*/"}}) {
-            nodes {
-              relativePath
-              childImageSharp {
-                fluid(maxWidth: 500, quality: 100) {
-                    ...GatsbyImageSharpFluid_noBase64
+      query {
+          allFile(filter: {dir: {regex: "/\/static\/.*/"}}) {
+              nodes {
+                relativePath
+                childImageSharp {
+                  fluid(maxWidth: 500, quality: 100) {
+                      ...GatsbyImageSharpFluid_noBase64
+              }
             }
           }
         }
       }
-    }
-  `)
+    `);
 
   const match = useMemo(() => (
     data.allFile.nodes.find(({ relativePath }) => src === '/assets/' + relativePath)
@@ -46,11 +46,11 @@ export const Image = ({ src, ...props }) => {
 
   return fluid ? (
     <StyledImg
-        fluid={fluid}
-        objectFit="cover"
-        objectPosition="50% 50%"
-        style={{height: 'inherit'}}
-        {...props}
+      fluid={fluid}
+      objectFit="cover"
+      objectPosition="50% 50%"
+      style={{height: 'inherit'}}
+      {...props}
     />
-  ) : null
+    ) : null;
 };
