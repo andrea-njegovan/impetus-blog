@@ -9,6 +9,7 @@ description: Emotional intelligence is critical in building and maintaining
   developed, and enhanced.
 image: /assets/img.jpg
 imageUrl: img.jpg
+author: Marjo
 ---
 ![](/assets/img.jpg)
 
