@@ -6,10 +6,10 @@ import { respondTo } from '../utils/respondTo';
 export const StyledSection = styled.div`
     width: 100%;
     margin: 0 auto;
-    padding: 1rem 1.5rem;
+    padding: 3.5rem 1.5rem;
     max-width: 100%;
     ${respondTo.md`
-        padding: 1rem;
+        padding: 2rem 1rem;
         max-width: 1150px;
     `}
 `;
