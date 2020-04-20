@@ -32,7 +32,9 @@ class BlogPostTemplate extends React.Component {
             <Header>
                 <Title>{ post.frontmatter.title }</Title>
                 <Details>
-                  <Avatar src={post.frontmatter.author.frontmatter.image} size={50}/>
+                  {!!post.frontmatter.author && 
+                    <Avatar src={post.frontmatter.author.frontmatter.image} size={50}/>
+                  }
                   <div>
                       {!!post.frontmatter.author && 
                         <AuthorName>{post.frontmatter.author.frontmatter.id} {post.frontmatter.author.frontmatter.surname}</AuthorName>
