@@ -47,7 +47,7 @@ export const BookItemWrapper = styled.div`
 
     ${respondTo.sm`
         grid-template-columns: 1fr 50%;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
         box-shadow: none;
         border-radius: 0;
     `}
@@ -75,7 +75,7 @@ export const BookItemTitle = styled.h2`
     word-break: keep-all;
     line-height: 1.333;
     font-weight: bold;
-    margin: 1rem 0;
+    margin: 0.2rem 0;
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
     text-overflow: ellipsis;

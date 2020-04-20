@@ -26,7 +26,7 @@ collections:
       - { name: id, label: Name }
       - { name: surname, label: Surname }
       - { name: bio, label: Bio }
-      - { name: image, label: image, widget: Image }
+      - { name: image, label: Image, widget: image }
       - { name: facebook, label: Facebook }
       - { name: linkedin, label: Linkedin }
       - { name: twitter, label: Twitter }
