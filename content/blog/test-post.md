@@ -11,7 +11,7 @@ image: /assets/mar20_23_1022720964-2.jpg
 imageUrl: mar20_23_1022720964-2.jpg
 author: Andrea
 ---
-![](/assets/mar20_23_1022720964-2.jpg)
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit duis tristique sollicitudin nibh sit amet. Tincidunt ornare massa eget egestas purus viverra accumsan in. In nulla posuere sollicitudin aliquam. Consequat interdum varius sit amet mattis vulputate enim. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Quis lectus nulla at volutpat diam ut venenatis tellus. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. In pellentesque massa placerat duis ultricies lacus sed. In nibh mauris cursus mattis molestie a iaculis. Vel pretium lectus quam id. Viverra vitae congue eu consequat ac felis donec et odio. Ut ornare lectus sit amet est placerat in. Gravida rutrum quisque non tellus orci.
 
