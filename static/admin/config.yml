@@ -27,6 +27,6 @@ collections:
       - { name: surname, label: Surname }
       - { name: bio, label: Bio }
       - { name: image, label: Image, widget: image }
-      - { name: facebook, label: Facebook }
-      - { name: linkedin, label: Linkedin }
-      - { name: twitter, label: Twitter }
+      - { name: facebook, label: Facebook, required: false }
+      - { name: linkedin, label: Linkedin, requred: false }
+      - { name: twitter, label: Twitter, required: false }

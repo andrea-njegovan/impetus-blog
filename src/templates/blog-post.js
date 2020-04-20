@@ -10,7 +10,6 @@ import {
   Header,
   Title,
   Details,
-  Author,
   Date,
   ArticleContent,
   PostsNav
