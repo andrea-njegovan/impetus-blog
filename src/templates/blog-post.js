@@ -19,10 +19,7 @@ import {
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
-    const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
-
-    console.log(this.props);
 
     return (
       <>
@@ -43,7 +40,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(1),
             }}
           />
-          <Bio {...post.frontmatter.author.frontmatter } />
+          { !!post.frontmatter.author && <Bio {...post.frontmatter.author.frontmatter } /> }
         </ArticleWrapper>
 
         <PostsNav>
