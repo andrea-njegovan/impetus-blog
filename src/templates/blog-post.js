@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/Bio"
 import SEO from "../components/seo"
-import { Avatar } from "../components/common";
+import { Avatar, Image } from "../components/common";
 import { rhythm } from "../utils/typography"
 
 import {
@@ -43,6 +43,8 @@ class BlogPostTemplate extends React.Component {
                     </div>
                 </Details>
             </Header>
+            <Image src={post.frontmatter.image} />
+            <br />
             <ArticleContent>{ post.body }</ArticleContent>
             <hr
           style={{
@@ -91,6 +93,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        image
         author {
           frontmatter {
             id

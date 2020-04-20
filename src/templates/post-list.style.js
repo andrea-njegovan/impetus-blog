@@ -31,9 +31,26 @@ export const StyledLink = styled(Link)`
     :hover {
         color: ${color.hover};
     }
+
+    >img {
+        -webkit-transition: transform 1.01s ease-in-out;
+        -moz-transition:transform 1.01s ease-in-out;
+        -ms-transition:transform 1.01s ease-in-out;
+        
+        :hover {
+            -moz-transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+            -o-transform: scale(1.01);
+            -ms-transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+            transform-origin: 50% 50%;
+        }
+    }
+
 `;
 
-export const BookItemWrapper = styled.div`
+export const ArticleWrapper = styled.div`
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -51,9 +68,24 @@ export const BookItemWrapper = styled.div`
         box-shadow: none;
         border-radius: 0;
     `}
+
+    :hover {
+        .gatsby-image-wrapper {
+            -webkit-transition: transform 1.01s ease-in-out;
+            -moz-transition:transform 1.01s ease-in-out;
+            -ms-transition:transform 1.01s ease-in-out;
+            -moz-transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+            -o-transform: scale(1.01);
+            -ms-transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+            transform-origin: 50% 50%;
+        }
+    }
 `;
 
-export const BookItemImageWrapper = styled.div`
+export const ImageWrapper = styled.div`
     position: relative;
     margin-bottom: 0px;
     overflow: hidden;
@@ -63,7 +95,7 @@ export const BookItemImageWrapper = styled.div`
     `}
 `;
 
-export const BookItemContentWrapper = styled.div`
+export const ContentWrapper = styled.div`
     flex-grow: 1;
     padding: 0.5rem 1rem;
     ${respondTo.sm`
@@ -71,7 +103,7 @@ export const BookItemContentWrapper = styled.div`
     `}
 `;
 
-export const BookItemTitle = styled.h2`
+export const ArticleTitle = styled.h2`
     word-break: keep-all;
     line-height: 1.333;
     font-weight: bold;
@@ -92,7 +124,7 @@ export const BookItemTitle = styled.h2`
     `}
 `;
 
-export const BookItemText = styled.p`
+export const ArticleDescription = styled.p`
     text-overflow: ellipsis;
     overflow-wrap: normal;
     -webkit-box-orient: vertical;
@@ -112,7 +144,7 @@ export const BookItemText = styled.p`
     `}
 `;
 
-export const BookItemInfo = styled.div`
+export const ArticleInfo = styled.div`
     font-weight: 600;
     font-size: 16px;
     color: var(--theme-ui-colors-grey,#73737D);
