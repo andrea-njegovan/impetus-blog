@@ -14,14 +14,19 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { name: author, label: Author, widget: select, options: [Marjo, Andrea], default: [Marjo] }
       - { name: description, label: Description }
       - { name: image, label: image, widget: image }
       - { name: body, label: Body, widget: markdown }
-  - name: authors
+  - name: author
     label: Authors
-    folder: content/authors
+    folder: content/author
     create: true
     fields:
-      - { name: name, label: Name }
+      - { name: id, label: Name }
+      - { name: surname, label: Surname }
       - { name: bio, label: Bio }
-      - { name: image, label: image, widget: image }
+      - { name: image, label: image, widget: Image }
+      - { name: facebook, label: Facebook }
+      - { name: linkedin, label: Linkedin }
+      - { name: twitter, label: Twitter }

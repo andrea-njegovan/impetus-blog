@@ -26,6 +26,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/author`,
+        name: `author`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
       },
@@ -96,6 +103,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          `Lora`,
+          `Merriweather`,
           `Indie Flower`,
           `Pacifico`
         ],
@@ -103,4 +112,7 @@ module.exports = {
       }
     },
   ],
+  mapping: {
+    'Mdx.frontmatter.author': 'Mdx.frontmatter.id'
+  }
 }

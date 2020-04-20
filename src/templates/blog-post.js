@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 import {
   ArticleWrapper,
@@ -22,6 +22,8 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
+    console.log(this.props);
+
     return (
       <>
         <SEO
@@ -38,23 +40,23 @@ class BlogPostTemplate extends React.Component {
             <ArticleContent>{ post.body }</ArticleContent>
             <hr
           style={{
-            marginBottom: rhythm(1),
+            marginTop: rhythm(1),
             }}
           />
-          <Bio author={ post.frontmatter.author } />
+          <Bio {...post.frontmatter.author.frontmatter } />
         </ArticleWrapper>
 
         <PostsNav>
           <li>
-            {previous && (
-              <Link to={`blog${previous.fields.slug}`} rel="prev">
+            {previous && previous.frontmatter.title && (
+              <Link to={`${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
-            {next && (
-              <Link to={`blog${next.fields.slug}`} rel="next">
+            {next && next.frontmatter.title && (
+              <Link to={`${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -83,7 +85,14 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        author
+        author {
+          frontmatter {
+            id
+            surname
+            bio
+            image
+         }
+        }
       }
     }
   }

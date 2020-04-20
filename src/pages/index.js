@@ -15,6 +15,7 @@ const WelcomeWrapper = styled.div`
 `;*/
 
 const IndexPage = (props) => {
+  console.log(props);
 
 	return (
     <>
@@ -27,6 +28,24 @@ const IndexPage = (props) => {
 
 export default IndexPage
 
+
+// allMdx(filter: {frontmatter: {author: {frontmatter: {title: {regex: "/^$|\\s+/"}}}}}) {
+//   edges {
+//     node {
+//       frontmatter {
+//         title
+//         author {
+//           frontmatter {
+//             bio
+//             id
+//             surname
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
 export const pageQuery = graphql`
   query {
     site {
@@ -34,7 +53,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }, filter: {frontmatter: {author: {frontmatter: {title: {regex: "/^$|\\\\s+/"}}}}}) {
       edges {
         node {
           excerpt
@@ -46,7 +65,6 @@ export const pageQuery = graphql`
             title
             description
             image
-            author
           }
         }
       }

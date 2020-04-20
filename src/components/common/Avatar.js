@@ -1,5 +1,4 @@
 import React, { useMemo } from "react";
-import styled from 'styled-components';
 import safeGet from 'lodash.get';
 import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
@@ -16,7 +15,7 @@ export const Avatar = ({ src, ...props }) => {
         nodes {
           relativePath
           childImageSharp {
-            fixed(width: 50, height: 50) {
+            fixed(width: 75, height: 75) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -38,7 +37,7 @@ export const Avatar = ({ src, ...props }) => {
       style={{
         marginRight: rhythm(1 / 2),
         marginBottom: 0,
-        minWidth: 50,
+        minWidth: 75,
         borderRadius: `100%`,
       }}
       imgStyle={{

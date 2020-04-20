@@ -1,61 +1,59 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
 import { Avatar } from './common';
 import styled from "styled-components"
+import color from '../utils/colors';
 
-function Bio({author}) {
-
-  return (
-    <StaticQuery
-      query={bioQuery}
-      render={data => {
-        const { author, social } = data.site.siteMetadata
-        return (
-          <Container>
-            <Avatar src="/assets/profile.jpg" />
-            <p>
-              Written by <strong>{author}</strong>
-              {` `}
-              <a href={`http://linkedin.com/in//${social.linkedin}`}>
-                You should follow her on Linkedin
-              </a>
-            </p>
-          </Container>
-        )
-      }}
-    />
-  )
+function Bio({id, surname, bio, image, linkedin}) {
+    return (
+      <Container>
+        <Avatar src={image} />
+        <Info>
+          <IntroAuthor>Written by</IntroAuthor>
+          <AuthorName>{id} {surname}</AuthorName>
+          <Description>
+            { bio }
+          </Description>
+        </Info>
+        <Socal>
+          
+        </Socal>
+      </Container>
+    )
 }
-
-const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    site {
-      siteMetadata {
-        author
-        social {
-          linkedin
-        }
-      }
-    }
-  }
-`
 
 const Container = styled.div`
   display: flex;
+  justify-content: space-between;
+`
+
+const Info = styled.div`
+  width: 35rem;
+`
+const IntroAuthor = styled.span`
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: ${color.secondary};
+`
+
+const AuthorName = styled.h2`
+  width: 40rem;
+  line-height: 34px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: ${color.dark};
+`
+
+const Description = styled.div`
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 300;
+  color: ${color.grey};
+`
+
+const Socal = styled.div`
+  width: 10rem;
 `
 
 export default Bio

@@ -1,5 +1,4 @@
 ---
-name: Andrea
 id: Andrea
 surname: Njegovan
 bio: JVG is a writer/director in NYC and LA. His latest film, “Team Marco,” is

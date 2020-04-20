@@ -21,7 +21,7 @@ const StyledImg = styled(Img)`
 `;
 
 export const Image = ({ src, avatar, ...props }) => {
-  console.log(props);
+  console.log(src);
 
   const data = useStaticQuery(graphql`
       query {
@@ -37,6 +37,7 @@ export const Image = ({ src, avatar, ...props }) => {
         }
       }
     `);
+    console.log(data);
 
   const match = useMemo(() => (
     data.allFile.nodes.find(({ relativePath }) => src === '/assets/' + relativePath)
