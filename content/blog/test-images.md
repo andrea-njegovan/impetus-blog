@@ -11,7 +11,7 @@ image: /assets/img.jpg
 imageUrl: img.jpg
 author: Marjo
 ---
-![](/assets/img.jpg)
+
 
 Today’s in-demand skills are increasingly technical in nature. However, there's a corresponding need for the uniquely human ability to work with and through others to accomplish important goals.
 
