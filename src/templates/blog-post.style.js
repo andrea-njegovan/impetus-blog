@@ -17,8 +17,8 @@ export const ArticleWrapper = styled.div`
 `;
 
 export const Header = styled.header`
-    margin: 2rem auto;
-    padding: 0px 40px;
+    margin: 1rem auto;
+    padding: 1rem;
     max-width: 749px;
     ${respondTo.md`
         position: relative;
@@ -43,34 +43,22 @@ export const Details = styled.div`
     position: relative;
     display: flex;
     font-size: 14px;
-    flex-direction: column;
+    flex-direction: row;
     color: ${color.secondary};
-    border: 0.5px solid ${color.border};
-    border-radius: 5px;
-    padding: 0.5rem;
     ${respondTo.md`
-        flex-direction: row;
         font-size: 18px;
-        border: none;
         padding: 0;
     `}
 `;
 
-export const Author = styled.div`
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    ${respondTo.md`
-        padding-right: 0.5rem;
-        border-right: 0.5px solid ${color.border};
-    `}
+export const AuthorName = styled.div`
+    font-size: 15px;
+    color: ${color.dark};
+    line-height: 20px;
 `;
 
 export const Date = styled.div`
-    font-size: 14px;
-    ${respondTo.md`
-        padding-left: 0.5rem;
-    `}
+    font-size: 15px;
 `;
 
 export const ArticleImage = styled.div`

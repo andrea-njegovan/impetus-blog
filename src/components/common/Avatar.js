@@ -5,7 +5,7 @@ import Image from "gatsby-image";
 
 import { rhythm } from "../../utils/typography"
 
-export const Avatar = ({ src, ...props }) => {
+export const Avatar = ({ src, size }) => {
 
   const data =
     useStaticQuery(graphql`
@@ -35,7 +35,8 @@ export const Avatar = ({ src, ...props }) => {
       style={{
         marginRight: rhythm(1 / 2),
         marginBottom: 0,
-        minWidth: 75,
+        maxWidth: size || 75,
+        maxHeight: size || 75,
         borderRadius: `100%`,
       }}
       imgStyle={{

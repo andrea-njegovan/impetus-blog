@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/Bio"
 import SEO from "../components/seo"
+import { Avatar } from "../components/common";
 import { rhythm } from "../utils/typography"
 
 import {
@@ -10,6 +11,7 @@ import {
   Header,
   Title,
   Details,
+  AuthorName,
   Date,
   ArticleContent,
   PostsNav
@@ -30,7 +32,13 @@ class BlogPostTemplate extends React.Component {
             <Header>
                 <Title>{ post.frontmatter.title }</Title>
                 <Details>
-                    <Date>Published on { post.frontmatter.date }</Date>
+                  <Avatar src={post.frontmatter.author.frontmatter.image} size={50}/>
+                  <div>
+                      {!!post.frontmatter.author && 
+                        <AuthorName>{post.frontmatter.author.frontmatter.id} {post.frontmatter.author.frontmatter.surname}</AuthorName>
+                      }
+                      <Date>{ post.frontmatter.date }</Date>
+                    </div>
                 </Details>
             </Header>
             <ArticleContent>{ post.body }</ArticleContent>
