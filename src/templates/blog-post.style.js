@@ -9,7 +9,7 @@ export const ArticleWrapper = styled.div`
         padding: 3rem 5rem;
     `}
     ${respondTo.lg`
-        padding: 3rem 15rem;
+        padding: 3rem 22rem;
     `}
     ${respondTo.xlg`
         padding: 3rem 30rem;

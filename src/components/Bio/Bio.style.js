@@ -60,8 +60,9 @@ export const SocialMedia = styled.div`
   padding-top: 1.8rem;
   display: flex;
   justify-content: space-between;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	${respondTo.sm`
 		margin-left: 5rem;
+		flex-direction: row-reverse;
 	`}
 `
