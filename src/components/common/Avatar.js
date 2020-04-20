@@ -6,7 +6,6 @@ import Image from "gatsby-image";
 import { rhythm } from "../../utils/typography"
 
 export const Avatar = ({ src, ...props }) => {
-  console.log(props);
 
   const data =
     useStaticQuery(graphql`
@@ -23,7 +22,6 @@ export const Avatar = ({ src, ...props }) => {
       }
     }
   `);
-  console.log(data);
 
   const match = useMemo(() => (
     data.allFile.nodes.find(({ relativePath }) => src === '/assets/' + relativePath)

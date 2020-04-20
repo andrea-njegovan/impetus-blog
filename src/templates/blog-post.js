@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import Bio from "../components/Bio"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
@@ -36,7 +36,7 @@ class BlogPostTemplate extends React.Component {
             <ArticleContent>{ post.body }</ArticleContent>
             <hr
           style={{
-            marginTop: rhythm(1),
+            marginTop: rhythm(2),
             }}
           />
           { !!post.frontmatter.author && <Bio {...post.frontmatter.author.frontmatter } /> }
@@ -87,7 +87,10 @@ export const pageQuery = graphql`
             surname
             bio
             image
-         }
+            facebook
+            linkedin
+            twitter
+          }
         }
       }
     }
