@@ -14,6 +14,7 @@ import {
   AuthorName,
   Date,
   ArticleContent,
+  ArticleBody,
   PostsNav
 } from './blog-post.style';
 
@@ -45,7 +46,11 @@ class BlogPostTemplate extends React.Component {
             </Header>
             <Image src={post.frontmatter.image} />
             <br />
-            <ArticleContent>{ post.body }</ArticleContent>
+            <ArticleContent>
+              <ArticleBody>
+                { post.body }
+              </ArticleBody>
+            </ArticleContent>
             <hr
           style={{
             marginTop: rhythm(2),

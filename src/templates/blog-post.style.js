@@ -5,14 +5,28 @@ import { respondTo } from '../utils/respondTo';
 
 export const ArticleWrapper = styled.div`
     padding: 1.5rem;
-    ${respondTo.md`
-        padding: 3rem 5rem;
+    width: 100%;
+    font-size: 19px;
+    ${respondTo.sm`
+        display: block;
+        position: relative;
+        left: 15%;
+        width: 70%;
+        vertical-align: middle;
     `}
     ${respondTo.lg`
-        padding: 3rem 22rem;
+        display: block;
+        position: relative;
+        left: 25%;
+        width: 50%;
+        vertical-align: middle;
     `}
     ${respondTo.xlg`
-        padding: 3rem 30rem;
+        display: block;
+        position: relative;
+        left: 30%;
+        width: 40%;
+        vertical-align: middle;
     `}
 `;
 
@@ -77,7 +91,12 @@ export const ArticleImage = styled.div`
     `}
 `;
 
-export const ArticleContent = styled(MDXRenderer)`
+export const ArticleContent = styled.div`
+    font-size: 19px;
+    line-height: 2rem;
+`;
+
+export const ArticleBody = styled(MDXRenderer)`
     position: relative;
     color: ${color.articleText};
     transition: background 0.2s linear 0s;
@@ -87,6 +106,7 @@ export const ArticleContent = styled(MDXRenderer)`
     flex-direction: column;
     font-weight: 18px;
     padding: 2rem;
+    font-size: 21px;
 `;
 
 export const PostsNav = styled.ul`
