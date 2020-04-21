@@ -8,6 +8,10 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
   commodo consequat.
 image: /assets/lorem2.jpeg
+references:
+  - oneref
+  - tworef
+  - threeref
 ---
 
 
