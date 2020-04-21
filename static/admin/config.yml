@@ -18,12 +18,12 @@ collections:
       - { name: description, label: Description }
       - { name: image, label: image, widget: image }
       - { name: body, label: Body, widget: markdown }
-      - { name: references, label: References, widget: object, requred: false, fields:
-          - { name: 1, label: First, requred: false}
-          - { name: 2, label: Second, requred: false}
-          - { name: 3, label: Third, requred: false }
-          - { name: 4, label: Forth, requred: false }
-          - { name: 5, label: Fifth, requred: false}
+      - { name: references, label: References, widget: object, fields:
+          - { name: first, label: First, requred: false}
+          - { name: second, label: Second, requred: false}
+          - { name: third, label: Third, requred: false }
+          - { name: forth, label: Forth, requred: false }
+          - { name: fifth, label: Fifth, requred: false}
         }
   - name: author
     label: Authors
