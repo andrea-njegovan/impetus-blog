@@ -131,7 +131,8 @@ export const ArticleDescription = styled.p`
     display: -webkit-box;
     white-space: normal;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.5rem;
     color: ${color.grey};
     display: box;
     max-width: 100%;
