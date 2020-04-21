@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/Bio"
 import SEO from "../components/seo"
 import { Avatar, Image } from "../components/common";
+import References from '../components/References';
 import { rhythm } from "../utils/typography"
 
 import {
@@ -15,7 +16,7 @@ import {
   Date,
   ArticleContent,
   ArticleBody,
-  PostsNav
+  PostsNav,
 } from './blog-post.style';
 
 class BlogPostTemplate extends React.Component {
@@ -50,6 +51,9 @@ class BlogPostTemplate extends React.Component {
               <ArticleBody>
                 { post.body }
               </ArticleBody>
+              {!!post.frontmatter.references &&
+                <References references={post.frontmatter.references} />
+              }
             </ArticleContent>
             <hr
           style={{
@@ -58,7 +62,6 @@ class BlogPostTemplate extends React.Component {
           />
           { !!post.frontmatter.author && <Bio {...post.frontmatter.author.frontmatter } /> }
         </ArticleWrapper>
-
         <PostsNav>
           <li>
             {previous && previous.frontmatter.title && (
@@ -99,6 +102,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         image
+        references
         author {
           frontmatter {
             id
