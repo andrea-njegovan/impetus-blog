@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128.51 111.77">
+  <defs>
+    <clipPath id="clip-path" transform="translate(0 -1.08)">
+      <path d="M64.26,1.08A5.9,5.9,0,1,1,58.36,7a5.89,5.89,0,0,1,5.9-5.89M92,33.22a5.9,5.9,0,1,0-5.89-5.9A5.9,5.9,0,0,0,92,33.22Zm-55.43,2.3A10.1,10.1,0,0,1,46.61,45.6V80.93a3.79,3.79,0,0,0,7.57,0V25.25a10.08,10.08,0,0,1,20.15,0v77.52a3.79,3.79,0,0,0,7.57,0V46.07C81.9,40.24,86,35.52,92,35.52A10.1,10.1,0,0,1,102.05,45.6V62.39a3.8,3.8,0,0,0,3.78,3.79h18.52c4.16,0,4.16,6.29,0,6.29H105.83A10.1,10.1,0,0,1,95.76,62.39V45.6A3.81,3.81,0,0,0,92,41.81c-2.47,0-3.78,1.93-3.78,4.26v56.7a10.08,10.08,0,0,1-20.15,0V25.25a3.79,3.79,0,0,0-7.57,0V80.93a10.08,10.08,0,0,1-20.15,0V45.6a3.79,3.79,0,1,0-7.57,0V62.39A10.1,10.1,0,0,1,22.68,72.47H4.16c-4.16,0-4.16-6.29,0-6.29H22.68a3.8,3.8,0,0,0,3.78-3.79V45.6A10.1,10.1,0,0,1,36.54,35.52Zm0-2.3a5.9,5.9,0,1,0-5.9-5.9A5.9,5.9,0,0,0,36.54,33.22Z" style="fill: none;clip-rule: evenodd"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="109.38" y1="114.46" x2="17.4" y2="-4.92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#603e94"/>
+      <stop offset="0.33" stop-color="#f01a77"/>
+      <stop offset="0.65" stop-color="#ff9000"/>
+      <stop offset="1" stop-color="#ffdb10"/>
+    </linearGradient>
+  </defs>
+  <title>blog lg</title>
+  <g style="clip-path: url(#clip-path)">
+    <rect width="128.51" height="111.77" style="fill: url(#linear-gradient)"/>
+  </g>
+</svg>
