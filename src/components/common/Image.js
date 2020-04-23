@@ -3,7 +3,7 @@ import safeGet from 'lodash.get';
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
-export const Image = ({ src, avatar, ...props }) => {
+export const Image = ({ src, ...props }) => {
 
   const data = useStaticQuery(graphql`
       query {

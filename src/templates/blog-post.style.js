@@ -11,7 +11,7 @@ export const ArticleWrapper = styled.div`
         display: block;
         position: relative;
         left: 15%;
-        width: 70%;
+        width: 80%;
         vertical-align: middle;
     `}
     ${respondTo.lg`
@@ -79,7 +79,7 @@ export const ArticleImage = styled.div`
     position: relative;
     z-index: 1;
     width: calc(100vw - 40px);
-    height: 220px;
+    height: 120px;
     margin: 0px auto;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 60px -10px, rgba(0, 0, 0, 0.22) 0px 18px 36px -18px;
     overflow: hidden;

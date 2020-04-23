@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import color from '../../utils/colors';
-import { respondTo } from '../../utils/respondTo';
 import { FaFolderOpen } from 'react-icons/fa';
 
 export const Container = styled.div`
