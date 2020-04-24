@@ -120,3 +120,7 @@ export const PostsNav = styled.ul`
         padding: 1rem 4rem;
     `}
 `;
+
+export const Divider = styled.hr`
+    margin-top: 1.5rem;
+`;

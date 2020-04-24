@@ -3,6 +3,7 @@ module.exports = {
     title: `Impetus B.`,
     author: `Andrea Njegovan`,
     description: `A personal blog offering motivational business, lifestyle and fitness stories.`,
+    siteShortName: `impetus-blog`,
     siteUrl: `https://impetus-blog.netlify.com/`,
     social: {
       linkedin: `andrea-njegovan-5ab87668`,
