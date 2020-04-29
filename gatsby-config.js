@@ -1,3 +1,27 @@
+require("dotenv").config();
+
+const blogQuery = `
+  {
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`;
+
+const queries = [
+  {
+    query: blogQuery,
+    transformer: ({ data }) => data.allMdx.edges.map(({node}) => node)
+  }
+];
+
 module.exports = {
   siteMetadata: {
     title: `Impetus B.`,
@@ -111,6 +135,15 @@ module.exports = {
         ],
         display: 'swap'
       }
+    },
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        queries,
+        chunkSize: 10000, // default: 1000
+      },
     },
   ],
   mapping: {
