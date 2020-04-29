@@ -10,6 +10,7 @@ const blogQuery = `
           frontmatter {
             title
             description
+            objectID: id
           }
         }
       }
@@ -20,7 +21,10 @@ const blogQuery = `
 const queries = [
   {
     query: blogQuery,
-    transformer: ({ data }) => data.allMdx.edges.map(({node}) => node)
+    transformer: ({ data }) => data.allMdx.edges.map(({node}) => node),
+    settings: {
+      autoGenerateObjectIDIfNotExist: true
+    }
   }
 ];
 
