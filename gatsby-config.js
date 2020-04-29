@@ -7,7 +7,7 @@ const blogQuery = `
     allMdx(filter: {frontmatter: {author: {frontmatter: {title: {regex: "/^$|\\\\s+/"}}}}}) {
       edges {
         node {
-          objectID: excerpt
+          objectID: fileAbsolutePath
           frontmatter {
             title
             description
@@ -21,7 +21,8 @@ const blogQuery = `
 const queries = [
   {
     query: blogQuery,
-    transformer: ({ data }) => data.allMdx.edges.map(({node}) => node)
+    transformer: ({ data }) => data.allMdx.edges.map(({node}) => node),
+    indexName: 'impetus-blog'
   }
 ];
 
