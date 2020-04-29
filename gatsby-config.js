@@ -10,7 +10,7 @@ const blogQuery = `
           frontmatter {
             title
             description
-            objectID: id
+            objectID: path
           }
         }
       }
