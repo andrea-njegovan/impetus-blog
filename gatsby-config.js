@@ -1,4 +1,6 @@
-require("dotenv").config();
+require("dotenv").config({
+  path: `.env`,
+});
 
 const blogQuery = `
   {
@@ -139,8 +141,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-algolia`,
       options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        appId: `OT2SKKDLYC`,
+        apiKey: `f02a40d2c548e3c93f19bbc919512077`,
         queries,
         chunkSize: 10000, // default: 1000
       },
