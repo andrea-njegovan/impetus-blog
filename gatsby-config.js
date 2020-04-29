@@ -4,13 +4,13 @@ require("dotenv").config({
 
 const blogQuery = `
   {
-    allMdx {
+    allMdx(filter: {frontmatter: {author: {frontmatter: {title: {regex: "/^$|\\\\s+/"}}}}}) {
       edges {
         node {
+          objectID: excerpt
           frontmatter {
             title
             description
-            objectID: path
           }
         }
       }
@@ -21,10 +21,7 @@ const blogQuery = `
 const queries = [
   {
     query: blogQuery,
-    transformer: ({ data }) => data.allMdx.edges.map(({node}) => node),
-    settings: {
-      autoGenerateObjectIDIfNotExist: true
-    }
+    transformer: ({ data }) => data.allMdx.edges.map(({node}) => node)
   }
 ];
 
