@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { GoSearch } from 'react-icons/go';
+import Search from '../Search';
 import {
 	HeaderWrapper,
 	HeaderContent,
@@ -23,7 +24,9 @@ const Header = ({ siteTitle, menuClickHandler }) => {
 				<MobileSearch onClick={ menuClickHandler }>
 					<GoSearch size={30} />
 				</MobileSearch>
-				<DesktopSearch />
+				<DesktopSearch>
+					<Search />
+				</DesktopSearch>
 			</HeaderContent>
 		</HeaderWrapper>
 	)

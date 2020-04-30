@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Search from '../Search';
 import color from '../../utils/colors';
 import { respondTo } from '../../utils/respondTo';
 
@@ -41,7 +40,7 @@ export const MobileSearch = styled.div`
 	`}
 `;
 
-export const DesktopSearch = styled(Search)`
+export const DesktopSearch = styled.div`
 	display: none;
 	${respondTo.sm`
 		display: block;
