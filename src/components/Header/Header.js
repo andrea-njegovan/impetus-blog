@@ -1,31 +1,30 @@
 import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-
-import ToggleButton from '../SideMenu/ToggleButton';
+import { GoSearch } from 'react-icons/go';
 import {
 	HeaderWrapper,
-	Navbar,
-	LogoWrapper,
+	HeaderContent,
 	Logo,
-	ResponsiveNav
+	MobileSearch,
+	DesktopSearch
 } from './Header.style';
 
 const Header = ({ siteTitle, menuClickHandler }) => {
 
 	return (
 		<HeaderWrapper>
-			<Navbar>
-				<LogoWrapper>
-					<ToggleButton click={ menuClickHandler } />
-					<Logo>
-						<Link to="/">
-							{ siteTitle }
-						</Link>
-					</Logo>
-				</LogoWrapper>
-				<ResponsiveNav className="navigation" />
-			</Navbar>
+			<HeaderContent>
+				<Logo>
+					<Link to="/">
+						{ siteTitle }
+					</Link>
+				</Logo>
+				<MobileSearch onClick={ menuClickHandler }>
+					<GoSearch size={30} />
+				</MobileSearch>
+				<DesktopSearch />
+			</HeaderContent>
 		</HeaderWrapper>
 	)
 }

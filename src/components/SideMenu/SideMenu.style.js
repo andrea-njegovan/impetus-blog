@@ -4,25 +4,26 @@ import color from '../../utils/colors';
 import { respondTo } from '../../utils/respondTo';
 
 export const MenuNav = styled.div`
-    display: block;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
     ${respondTo.sm`
 		display: none;
 	`}
-    height: 100%;
+    height: 4rem;
     background-color: ${color.white};
     box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     lett: 0;
-    width: 70%;
-    max-width: 400px;
+    width: 85%;
     z-index: 200;
     transform: translate(
         ${props => {
             return props.show ? '0' : '-100%'
         }}
     );
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-in-out;
 
     >ul {
         height: 100%;

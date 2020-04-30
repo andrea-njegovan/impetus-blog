@@ -17,7 +17,7 @@ const PostListTemplate = ({ posts, children }) => {
 		<StyledSection>
 			{ children }
 			{posts.map(({ node }) => (
-				<StyledLink	key={ node.id } to={`/${ node.fields.slug }`}>
+				<StyledLink	key={ node.fields.slug } to={`/${ node.fields.slug }`}>
                 <ArticleWrapper>
                 <ImageWrapper>
                     <Image src={ node.frontmatter.image } />

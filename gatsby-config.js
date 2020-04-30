@@ -8,9 +8,11 @@ const blogQuery = `
       edges {
         node {
           objectID: fileAbsolutePath
+          fields {
+            slug
+          }
           frontmatter {
             title
-            description
           }
         }
       }

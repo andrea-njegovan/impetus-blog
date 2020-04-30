@@ -1,18 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import SEO from "../components/seo";
-/*import styled from 'styled-components';
-import { respondTo } from '../utils/respondTo';*/
 
 import PostListTemplate from '../templates/post-list';
-/*import Welcome from '../components/Welcome';
-
-const WelcomeWrapper = styled.div`
-    display: none;
-    ${respondTo.md`
-        display: inline-block;
-    `}
-`;*/
 
 const IndexPage = (props) => {
 
@@ -26,24 +16,6 @@ const IndexPage = (props) => {
 }
 
 export default IndexPage
-
-
-// allMdx(filter: {frontmatter: {author: {frontmatter: {title: {regex: "/^$|\\s+/"}}}}}) {
-//   edges {
-//     node {
-//       frontmatter {
-//         title
-//         author {
-//           frontmatter {
-//             bio
-//             id
-//             surname
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 
 export const pageQuery = graphql`
   query {

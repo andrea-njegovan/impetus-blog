@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Navigation from '../Navigation';
+import Search from '../Search';
 import color from '../../utils/colors';
 import { respondTo } from '../../utils/respondTo';
 
@@ -14,21 +14,12 @@ export const HeaderWrapper = styled.header`
 	z-index: 100;
 `;
 
-export const Navbar = styled.nav`
+export const HeaderContent = styled.div`
+	padding: 1rem;
 	display: flex;
 	justify-content: space-between;
-	height: 100%;
-	align-items: center;
-	padding: 0 1rem;
-	${respondTo.sm`
-		padding: 0 3rem;
-	`}
 `;
 
-export const LogoWrapper = styled.div`
-	display: flex;
-	justify-content: space-between;
-`;
 
 export const Logo = styled.div`
 	font-family: Pacifico;
@@ -43,7 +34,14 @@ export const Logo = styled.div`
 	}
 `;
 
-export const ResponsiveNav = styled(Navigation)`
+export const MobileSearch = styled.div`
+	display: block;
+	${respondTo.sm`
+		display: none;
+	`}
+`;
+
+export const DesktopSearch = styled(Search)`
 	display: none;
 	${respondTo.sm`
 		display: block;
