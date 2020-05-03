@@ -16,7 +16,7 @@ export const MenuNav = styled.div`
     position: fixed;
     top: 0;
     lett: 0;
-    width: 85%;
+    width: 82%;
     z-index: 200;
     transform: translate(
         ${props => {

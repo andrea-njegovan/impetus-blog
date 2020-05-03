@@ -23,7 +23,7 @@ function References({references}) {
 			</ReferencesButton>
 			<ReferencesList show={ isOpen }>
 				{references.map( r => (
-					<li>{r}</li>
+					<li key={r}>{r}</li>
 				))}
 			</ReferencesList>
 		</Container>

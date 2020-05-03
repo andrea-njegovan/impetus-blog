@@ -7,8 +7,6 @@ import {
 	HeaderWrapper,
 	HeaderContent,
 	Logo,
-	MobileSearch,
-	DesktopSearch
 } from './Header.style';
 
 const Header = ({ siteTitle, menuClickHandler }) => {
@@ -17,16 +15,11 @@ const Header = ({ siteTitle, menuClickHandler }) => {
 		<HeaderWrapper>
 			<HeaderContent>
 				<Logo>
-					<Link to="/">
+					<Link to="/" style={{position: `absolute`}}>
 						{ siteTitle }
 					</Link>
 				</Logo>
-				<MobileSearch onClick={ menuClickHandler }>
-					<GoSearch size={30} />
-				</MobileSearch>
-				<DesktopSearch>
-					<Search />
-				</DesktopSearch>
+				<Search />
 			</HeaderContent>
 		</HeaderWrapper>
 	)

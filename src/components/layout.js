@@ -8,7 +8,7 @@ import Backdrop from './Backdrop';
 import "./layout.css";
 
 const Layout = ({ children }) => {
-	const [ sideMenuOpen, setSideMenuOpen ] = useState(false);
+	//const [ sideMenuOpen, setSideMenuOpen ] = useState(false);
 
 	const data = useStaticQuery(graphql`
 		query SiteTitleQuery {
@@ -20,24 +20,24 @@ const Layout = ({ children }) => {
 		}
 	`)
 
-	function menuToggleClickHandler() {
+	/*function menuToggleClickHandler() {
 		setSideMenuOpen(!sideMenuOpen);
 	}
 	
 	function backdropClickHandler() {
 		setSideMenuOpen(false);
-	}
+	}*/
 
 	return (
     <>
 		<Header
 			siteTitle={data.site.siteMetadata.title}
-			menuClickHandler={menuToggleClickHandler}
+			//menuClickHandler={menuToggleClickHandler}
 		/>
-		<SideMenu show={ sideMenuOpen } close={ backdropClickHandler } />
+		{/*<SideMenu show={ sideMenuOpen } close={ backdropClickHandler } />
 		{!!sideMenuOpen &&
 			<Backdrop click={ backdropClickHandler }/>
-		}
+		}*/}
 		<div
 			style={{
 				margin: `0 auto`,

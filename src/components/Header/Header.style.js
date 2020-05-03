@@ -22,9 +22,8 @@ export const HeaderContent = styled.div`
 
 export const Logo = styled.div`
 	font-family: Pacifico;
-	margin-left: 1rem;
 	${respondTo.sm`
-		margin-left: 0;
+		padding-left: 0.7rem;
 	`}
 
 	>a {
