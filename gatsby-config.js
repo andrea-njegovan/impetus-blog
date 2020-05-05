@@ -13,6 +13,7 @@ const blogQuery = `
           }
           frontmatter {
             title
+            description
           }
         }
       }

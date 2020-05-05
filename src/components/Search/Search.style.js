@@ -5,7 +5,10 @@ import img from './search-icon.svg';
 
 export const SearchWrapper = styled.div` 
     > .ais-SearchBox {
-        padding-right: 2rem;
+        padding-right: 0;
+        ${respondTo.sm`
+            padding-right: 1rem;
+        `}
 
         > .ais-SearchBox-form {
             justify-content: flex-end;
@@ -53,10 +56,16 @@ export const SearchWrapper = styled.div`
                 -moz-appearance: none;
                 &:focus {
                     padding-left: 37px;
-                    width: 15rem;
+                    width: 24rem;
                     outline: none;
                     background-color: ${color.background};
-
+                    height: 3rem;
+                    margin-top: -0.5rem;
+                    ${respondTo.sm`
+                        width: 15rem;
+                        height: auto;
+                        margin-top: 0;
+                    `}
                 }
                 > svg {
                     width: 50px;
@@ -67,13 +76,20 @@ export const SearchWrapper = styled.div`
             > .ais-SearchBox-submit {
                 display: none;
             }
+        }
+    }
+    > div > .ais-Hits {
+        background-color: ${color.white};
 
-            > .ais-SearchBox-reset {
-                margin-right: -26px;
-                border: 0;
-                background-color: ${color.background};
-                width: 26px;
-                height: 34px;
+        > ul {
+            display: flex;
+            flex-direction: column;
+            ${respondTo.sm`
+                flex-direction: row;
+            `}
+
+            > li {
+                width: 100%;
             }
         }
     }

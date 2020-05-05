@@ -16,6 +16,12 @@ const SearchPreview = ({hit}) => {
                     attribute="frontmatter.title"
                     tagName="mark"
                 />
+                <hr />
+                <Highlight
+                    hit={hit}
+                    attribute="frontmatter.description"
+                    tagName="mark"
+                />
             </StyledLink>
 		</StyledSection>
 	)

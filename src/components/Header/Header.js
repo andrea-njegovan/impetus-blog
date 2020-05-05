@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import { GoSearch } from 'react-icons/go';
 import Search from '../Search';
 import {
 	HeaderWrapper,

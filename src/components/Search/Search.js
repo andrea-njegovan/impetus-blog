@@ -1,6 +1,8 @@
 import React from 'react';
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, SearchBox, Hits, connectStateResults, Highlight } from 'react-instantsearch-dom';
+import { InstantSearch, SearchBox, Hits, connectStateResults } from 'react-instantsearch-dom';
+import 'instantsearch.css/themes/algolia.css';
+
 
 import {
     SearchWrapper
