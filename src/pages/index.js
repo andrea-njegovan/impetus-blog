@@ -1,17 +1,18 @@
 import React from "react";
 import { graphql } from "gatsby";
 import SEO from "../components/seo";
+import Layout from '../components/layout'
 
 import PostListTemplate from '../templates/post-list';
 
 const IndexPage = (props) => {
 
 	return (
-    <>
-      <SEO title="All posts" />
-      <PostListTemplate posts={ props.data.allMdx.edges }>
-      </PostListTemplate>
-    </>
+    <Layout title={props.data.site.siteTitle}>
+        <SEO title="All posts" />
+        <PostListTemplate posts={ props.data.allMdx.edges }>
+        </PostListTemplate>
+      </Layout>
 	)
 }
 

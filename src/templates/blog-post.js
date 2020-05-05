@@ -4,9 +4,9 @@ import { DiscussionEmbed } from "disqus-react"
 
 import Bio from "../components/Bio"
 import SEO from "../components/seo"
+import Layout from '../components/layout'
 import { Avatar, Image } from "../components/common";
 import References from '../components/References';
-import { rhythm } from "../utils/typography"
 
 import {
   ArticleWrapper,
@@ -32,7 +32,7 @@ const BlogPostTemplate = ( props ) => {
   }
 
   return (
-    <>
+    <Layout title={props.data.site.siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -83,7 +83,7 @@ const BlogPostTemplate = ( props ) => {
           )}
         </li>
       </PostsNav>
-    </>
+    </Layout>
   )
 }
 
