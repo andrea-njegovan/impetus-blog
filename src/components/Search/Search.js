@@ -2,6 +2,7 @@ import React from 'react';
 import algoliasearch from 'algoliasearch/lite';
 import { InstantSearch, SearchBox, Hits, connectStateResults } from 'react-instantsearch-dom';
 import 'instantsearch.css/themes/algolia.css';
+import 'instantsearch.css/themes/reset.css';
 
 
 import {

@@ -80,16 +80,28 @@ export const SearchWrapper = styled.div`
     }
     > div > .ais-Hits {
         background-color: ${color.white};
+        position: absolute;
+        right: 0;
+        top: 3rem;
+        margin-top: 1rem;
+        ${respondTo.sm`
+            width: 30%;
+            right: 1rem;
+        `}
 
         > ul {
             display: flex;
             flex-direction: column;
+            border: 1px solid #c4c8d8;
+            background-color: ${color.white};
+            
             ${respondTo.sm`
                 flex-direction: row;
             `}
 
             > li {
-                width: 100%;
+                width: 98.5%;
+                margin: 0.2rem;
             }
         }
     }
